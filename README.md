@@ -160,7 +160,7 @@
   <a name="es6-object-shorthand"></a><a name="3.5"></a>
   - [3.3](#es6-object-shorthand) Do not use object method shorthand. eslint: [`object-shorthand`](http://eslint.org/docs/rules/object-shorthand.html) jscs: [`requireEnhancedObjectLiterals`](http://jscs.info/rule/requireEnhancedObjectLiterals)
   
-  > Why? It obfuscates the structure of the object and hinders readability.
+    > Why? It obfuscates the structure of the object and hinders readability.
 
     ```javascript
     // bad
