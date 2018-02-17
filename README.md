@@ -543,15 +543,15 @@
     ```
 
   <a name="functions--iife"></a><a name="7.2"></a>
-  - [7.2](#functions--iife) Wrap immediately invoked function expressions in parentheses. eslint: [`wrap-iife`](http://eslint.org/docs/rules/wrap-iife.html) jscs: [`requireParenthesesAroundIIFE`](http://jscs.info/rule/requireParenthesesAroundIIFE)
+  - [7.2](#functions--iife) For IIFEs add the function parentheses outside the expression parentheses. 
 
-    > Why? An immediately invoked function expression is a single unit - wrapping both it, and its invocation parens, in parens, cleanly expresses this. Note that in a world with modules everywhere, you almost never need an IIFE.
+    > Why? You are creating an expression, which is then immediately invoked. Adding the function parentheses after the wrapping parentheses indicates this. Note that in a world with modules everywhere, you almost never need an IIFE.
 
     ```javascript
     // immediately-invoked function expression (IIFE)
     (function () {
       console.log('Welcome to the Internet. Please follow me.');
-    }());
+    })();
     ```
 
   <a name="functions--in-blocks"></a><a name="7.3"></a>
