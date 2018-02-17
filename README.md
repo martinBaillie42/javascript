@@ -131,7 +131,7 @@
     const item = {};
     ```
 
-  <a name="es6-computed-properties"></a><a name="3.4"></a>
+  <a name="es6-computed-properties"></a><a name="3.2"></a>
   - [3.2](#es6-computed-properties) Use computed property names when creating objects with dynamic property names.
 
     > Why? They allow you to define all the properties of an object in one place.
@@ -157,7 +157,7 @@
     };
     ```
 
-  <a name="es6-object-shorthand"></a><a name="3.5"></a>
+  <a name="es6-object-shorthand"></a><a name="3.3></a>
   - [3.3](#es6-object-shorthand) Do not use object method shorthand. eslint: [`object-shorthand`](http://eslint.org/docs/rules/object-shorthand.html) jscs: [`requireEnhancedObjectLiterals`](http://jscs.info/rule/requireEnhancedObjectLiterals)
   
     > Why? It obfuscates the structure of the object and hinders readability.
@@ -183,7 +183,7 @@
 
     ```
 
-  <a name="es6-object-concise"></a><a name="3.6"></a>
+  <a name="es6-object-concise"></a><a name="3.4"></a>
   - [3.4](#es6-object-concise) Do not use property value shorthand. eslint: [`object-shorthand`](http://eslint.org/docs/rules/object-shorthand.html) jscs: [`requireEnhancedObjectLiterals`](http://jscs.info/rule/requireEnhancedObjectLiterals)
 
     > Why? It obfuscates the structure of the object and hinders readability.
@@ -203,7 +203,7 @@
     };
     ```
 
-  <a name="objects--quoted-props"></a><a name="3.8"></a>
+  <a name="objects--quoted-props"></a><a name="3.5"></a>
   - [3.5](#objects--quoted-props) Only quote properties that are invalid identifiers. eslint: [`quote-props`](http://eslint.org/docs/rules/quote-props.html) jscs: [`disallowQuotedKeysInObjects`](http://jscs.info/rule/disallowQuotedKeysInObjects)
 
     > Why? In general we consider it subjectively easier to read. It improves syntax highlighting, and is also more easily optimized by many JS engines.
@@ -224,7 +224,7 @@
     };
     ```
 
-  <a name="objects--prototype-builtins"></a>
+  <a name="objects--prototype-builtins"></a><a name="3.6"></a>
   - [3.6](#objects--prototype-builtins) Do not call `Object.prototype` methods directly, such as `hasOwnProperty`, `propertyIsEnumerable`, and `isPrototypeOf`.
 
     > Why? These methods may be shadowed by properties on the object in question - consider `{ hasOwnProperty: false }` - or, the object may be a null object (`Object.create(null)`).
@@ -244,7 +244,7 @@
     console.log(has.call(object, key));
     ```
 
-  <a name="objects--rest-spread"></a>
+  <a name="objects--rest-spread"></a><a name="3.7"></a>
   - [3.7](#objects--rest-spread) Prefer the object spread operator over [`Object.assign`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/assign) to shallow-copy objects. Use the object rest operator to get a new object with certain properties omitted.
 
     ```javascript
@@ -292,7 +292,7 @@
     someStack.push('abracadabra');
     ```
 
-  <a name="arrays--from"></a><a name="4.4"></a>
+  <a name="arrays--from"></a><a name="4.3"></a>
   - [4.3](#arrays--from) To convert an array-like object to an array, use [Array.from](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/from).
 
     ```javascript
@@ -300,7 +300,7 @@
     const nodes = Array.from(foo);
     ```
 
-  <a name="arrays--callback-return"></a><a name="4.5"></a>
+  <a name="arrays--callback-return"></a><a name="4.4"></a>
   - [4.4](#arrays--callback-return) Use return statements in array method callbacks. It’s ok to omit the return if the function body consists of a single statement returning an expression without side effects, following [8.2](#arrows--implicit-return). eslint: [`array-callback-return`](http://eslint.org/docs/rules/array-callback-return)
 
     ```javascript
@@ -349,7 +349,7 @@
     });
     ```
 
-  <a name="arrays--bracket-newline"></a>
+  <a name="arrays--bracket-newline"></a><a name="4.5"></a>
   - [4.5](#arrays--bracket-newline) Use line breaks after open and before close array brackets if an array has multiple lines
 
     ```javascript
